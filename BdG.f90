@@ -77,7 +77,7 @@ end do
 
 b=0
 N_p=4
-M=Mx*My !AquÌ hay que est·r modificando
+M=Mx*My !Aqu√≠ hay que est√°r modificando
 PN=N_p*M
 do p=0,N_p-1
     UV=0.0q0
@@ -89,7 +89,7 @@ do p=0,N_p-1
             call htridi(2*N,2*N,HGr,HGi,D,E,E2,tau)
             UVr=uno
             call tql2(2*N,2*N,D,E,UVr,ierr)
-            call htribk(2*N,2*N,HGr,HGi,tau,2*N,UVr,UVi)      !AquÌ sacas los nuevos eigenvalores
+            call htribk(2*N,2*N,HGr,HGi,tau,2*N,UVr,UVi)      !Aqu√≠ sacas los nuevos eigenvalores
             UV=UVr+z*UVi
             UV=transpose(UV)
             um=UV(0:2*N-1,0:N-1)
